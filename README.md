@@ -1,2 +1,2 @@
-# English-language-trainer
+## English language trainer
 Простая программа, которая позволит быстрее выучить Английский язык.
