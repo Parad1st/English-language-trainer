@@ -67,7 +67,7 @@ class Program
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Неверно. Правильные переводы: {string.Join(", ", translations)}"); // Выводим все варианты
+                Console.WriteLine($"Неверно. Правильные переводы: {string.Join(", ", translations)}. Попробуй другое слово."); // Выводим все варианты
                 Console.ResetColor(); // сброс цвета на стандартный
             }
         }
