@@ -6,6 +6,7 @@ namespace MenuProgram
     {
         static void Main(string[] args)
         {
+            Console.Title = "EnglishLanguageTrainer: Выберите тренажер"; // Название окна
             Console.WriteLine("Выберите действие:");
             Console.WriteLine("1. Запустить тренажер слов");
             Console.WriteLine("2. Запустить тренажер времён");
@@ -28,6 +29,7 @@ namespace MenuProgram
             Console.WriteLine("Нажмите любую клавишу для выхода...");
             Console.ReadKey();
         }
+
 
         static void RunCode1()
         {
@@ -54,7 +56,7 @@ namespace MenuProgram
 
             while (true)
             {
-                Console.Title = "EnglishLanguageTrainer"; // Название окна
+                Console.Title = "Тренажер аннглийских слов"; // Название окна
 
                 if (lines.Length == 0) // Проверяем, не пустой ли файл (первые 2 строчки не считаются)
                 {
@@ -147,6 +149,7 @@ namespace MenuProgram
 
             while (true)
             {
+                Console.Title = "Тренажер времён"; // Название окна
                 int sentenceIndex = rand.Next(sentences.Count);
                 Sentence currentSentence = sentences[sentenceIndex];
                 Console.WriteLine(currentSentence.GetSentenceWithGaps());
