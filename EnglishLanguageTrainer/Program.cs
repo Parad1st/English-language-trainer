@@ -122,7 +122,11 @@ namespace MenuProgram
             if (lines.Length == 0)
             {
                 // Eсли он пустой
-                Console.WriteLine("Файл tenses.txt пустой! ");
+                File.WriteAllLines(filePath, new string[] {
+                "//Made by Parad1st - https://github.com/Parad1st/English-language-trainer НЕ УДАЛЯЙТЕ ЭТИ ДВЕ СТРОЧКИ",
+                "//I ... not ... (to keep) expired pills.-do,keep"
+            });
+                 Console.WriteLine("Файл tenses.txt пустой! ");
                 // Перезагрузка списка строк после добавления строки
                 lines = File.ReadAllLines(filePath).Skip(2).ToArray();
             }
@@ -139,7 +143,7 @@ namespace MenuProgram
                 }
             }
 
-            Console.WriteLine("Добро пожаловать");
+            Console.WriteLine("Добро пожаловать в тренажер английских времён!");
 
             while (true)
             {
